@@ -1,0 +1,39 @@
+.morning{
+    background-color: white;
+    height: 170px;
+
+    position: relative;
+    top:30px;
+    /* margin-right: 30px; */
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.column{
+    width: 50%;
+}
+.morning-user {
+    padding: 50px 0px 50px 35px;
+}
+.morning-user h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+.morning-user h2 span {
+    color: #2E37A4;
+}
+.morning-user p {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(51, 52, 72, 0.5);
+    margin-bottom: 0;
+}
+.position {
+    position: relative;
+}
+.img {
+    vertical-align: middle;
+}
+.morning-img{
+    margin-top: -80px;
+}

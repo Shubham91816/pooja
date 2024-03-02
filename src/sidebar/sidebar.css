@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#dash{
+    text-decoration: none!important;
+}
+.sidebar {
+    top: 90px;
+    width: 12%;
+    z-index: 1039;
+    background-color: hsl(0, 0%, 100%);
+    bottom: 0;
+    margin-top: 0px;
+    position: fixed;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    border-top-right-radius: 40px;
+    box-shadow: 5px 20px 14px rgba(46, 55, 164, 0.05);
+    overflow-y: hidden;
+    height: 100vh;
+}
+.slimScrollDiv{
+    position: relative; 
+    overflow: scroll; 
+    width: 100%; 
+    height:885px;
+}
+
+.sidebar.opened {
+	transition: all 0.4s ease;
+}
+.sidebar-inner {
+	height: 100%;
+	transition: all 0.2s ease-in-out 0s;
+}
+.sidebar-menu ul {
+	font-size: 14px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.sidebar-menu li a {
+	color: #888;
+	display: block;
+	font-size: 15px;
+	height: auto;
+	padding: 0 20px;
+}
+.sidebar-menu li a:hover {
+	color: #2e37a4;
+}
+.sidebar-menu ul li .active img {
+    filter: invert(13%) sepia(85%) saturate(7478%) hue-rotate(266deg) brightness(50%) contrast(340%);
+    transition: all 0.5s ease;
+}
+.sidebar-menu li.active a {
+	color: #2e37a4;
+}
+.menu-title {
+	color: #333;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 12px 20px;
+}
+.menu-title > i {
+	float: right;
+	line-height: 40px;
+}
+.sidebar-menu li.menu-title a {
+	color: #009efb;
+	display: inline-block;
+	/* float: right; */
+	padding: 0;
+}
+.sidebar-menu li.menu-title a.btn {
+	color: #fff;
+	display: block;
+	float: none;
+	font-size: 15px;
+	line-height: inherit;
+	margin-bottom: 15px;
+}
+.sidebar-menu ul .submenu .active {
+	color: #2E37A4;
+	font-weight: 500;
+}
+.sidebar-menu ul li .active {
+	color: #2E37A4;
+	font-weight: 500;
+}
+.sidebar-menu ul .submenu ul .active {
+	position: relative;
+}
+.sidebar-menu ul .submenu ul .active:before {
+	/* background-image: url(); */
+	content: "";
+	position: absolute;
+	width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+	top: 50%;
+    left: 35px;
+    transform: translate(0, -50%);
+}
+.sidebar-menu ul ul a.active {
+	color: #2E37A4;
+	font-weight: 500;
+}
+/* .mobile-user-menu {
+	color: #fff;
+	display: none;
+	font-size: 24px;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	top: 0;
+	width: 50px;
+	z-index: 10;
+} */
+/* .mobile-user-menu > a {
+	color: #fff;
+	padding: 0;
+}
+.mobile-user-menu > a:hover {
+	color: #fff;
+}
+.mobile-user-menu > .dropdown-menu > a {
+    line-height: 23px;
+} */
+.profile-rightbar {
+	display: none !important;
+	color: #009efb;
+	font-size: 26px;
+	margin-left: 15px;
+}
+.fixed-sidebar-right {
+	position: fixed;
+	top: 60px;
+	right: 0;
+	width: 300px;
+	margin-right: -300px;
+	bottom: 0;
+	z-index: 101;
+	transition: all 0.4s ease;
+}
+.mobile_btn {
+	display: none;
+}
+.sidebar .sidebar-menu > ul > li > a span {
+	transition: all 0.2s ease-in-out 0s;
+	margin-left: 10px;
+	white-space: nowrap;
+}
+.sidebar .sidebar-menu > ul > li > a span.badge {
+	color: #fff;
+	margin-left: auto;
+}
+.sidebar-menu ul ul a {
+	display: block;
+	font-size: 14px;
+	padding: 9px 10px 9px 60px;
+	position: relative;
+	color: rgba(46, 55, 164, 0.5);
+	font-weight: 500;
+}
+/* .sidebar-menu ul ul {
+	display: none;
+} */
+.show-list {
+	display: block;
+  }
+  
+  .hide-list {
+	display: none;
+  }
+  
+.sidebar-menu ul ul ul a {
+	padding-left: 70px;
+}
+.sidebar-menu ul ul ul ul a {
+	padding-left: 90px;
+}
+.sidebar-menu > ul > li {
+	position: relative;
+}
+.sidebar-menu .menu-arrow {
+	
+	transition: transform .15s;
+	position: absolute;
+	right: 25px;
+	display: inline-block;
+	font-family: 'FontAwesome';
+	text-rendering: auto;
+	line-height: 40px;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	line-height: 18px;
+	top: 23px;
+}
+.sidebar-menu li a.subdrop .menu-arrow:hover {
+	transform: rotate(90deg);
+}
+.sidebar-menu ul ul a .menu-arrow {
+	top: 6px;
+}
+.submenu a span{
+    text-decoration: none;
+}
+.sidebar-menu a {
+	transition: unset;
+}
+.sidebar-menu > ul > li > a {
+	padding: 12px 20px;
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	transition: all 0.2s ease-in-out 0s;
+	color: rgba(51, 53, 72, 0.75);
+	font-weight: 500;
+}
+.sidebar-menu ul li a i {
+	font-size: 18px;
+	min-height: 24px;
+	line-height: 18px;
+	transition: all 0.2s ease-in-out 0s;
+	background: rgba(46, 55, 164, 0.05);
+	border-radius: 8px;
+	width: 40px;
+	height: 40px;
+	margin-left: 0;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.sidebar-menu ul li a span.menu-side {
+	font-size: 18px;
+	min-height: 24px;
+	line-height: 18px;
+	transition: all 0.2s ease-in-out 0s;
+	background: rgba(46, 55, 164, 0.05);
+	border-radius: 8px;
+	width: 40px;
+	height: 40px;
+	margin-left: 0;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.sidebar-menu ul .submenu .active img {
+	filter: invert(13%) sepia(85%) saturate(7478%) hue-rotate(266deg) brightness(50%) contrast(340%);
+    transition: all 0.5s ease;
+}
+.sidebar-menu li a:hover img {
+   filter: invert(13%) sepia(85%) saturate(7478%) hue-rotate(266deg) brightness(50%) contrast(340%);
+    transition: all 0.5s ease;
+    
+}
+.sidebar-menu ul li.menu-title a i {
+	font-size: 16px;
+	margin-right: 0;
+	text-align: right;
+	width: auto;
+}
+.logout-btn {
+	margin: 50px 0px;
+}
+.logout-btn a span.menu-side {
+	font-size: 18px;
+    min-height: 24px;
+    line-height: 18px;
+    transition: all 0.2s ease-in-out 0s;
+    background: rgba(46, 55, 164, 0.05);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+	flex-shrink: 0;
+}
+.logout-btn a {
+    padding: 12px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    transition: all 0.2s ease-in-out 0s;
+    color: #2E37A4;
+    font-weight: 500;
+}
+.logout-btn a span {
+	margin-left: 10px;
+}
+.sidebar .sidebar-menu > ul > li > a span{
+    text-decoration: none;
+}
